@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;700&family=Londrina+Solid&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Khula", sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+
+main { 
+    width: 83.33%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.navbar { 
+    border: 2px solid grey;  
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f8e509;
+}
+
+.navbar-nav .nav-link:hover {
+    color: green; 
+}
+
+.carousel-item {
+    height: 100vh; /* Ensures the carousel item takes up full viewport height */
+    min-height: 300px;
+  }
+  
+.carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 300px;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+  
+.carousel-caption {
+    position: absolute;
+    color: black;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+h1 {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    text-decoration: underline;
+    align-items:flex-start;
+    
+}
+
+p {
+    font-family: "Khula", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+}
+
+.custom-container {
+    width: 83.33%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 1rem; /* Space between images */
+}
+
+.responsive-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rounded-top-left {
+    border-top-left-radius: 15%;
+}
+
+.rounded-top-right {
+    border-top-right-radius: 15%;
+}
+
+.rounded-bottom-left {
+    border-bottom-left-radius: 15%;
+}
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 15%;
+}
+
+footer {
+    background-color: lightcoral;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+ }
+
+
+/* Small devices (sm) */
+@media (max-width: 575.98px) {
+    .col-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    body {
+        font-size: 26px;
+    }
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size:4vh;
+        text-align: left;
+    }
+}
+
+/* Medium devices (md) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .col-md-6 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    body {
+        font-size: 2vh;
+    }
+    h1 {
+        font-size: 60px;
+        text-align: right;
+    }
+    h2 {
+        font-size: 50px;
+    }
+}
+
+/* Large devices (lg) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .col-lg-4 {
+        max-width: 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+}
